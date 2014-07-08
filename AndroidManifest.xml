@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myualbany_app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.myualbany_app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.example.myualbany_app.JanView"
+            android:label="@string/month_jan" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.academ_cal_byMonth"
+            android:label="@string/Academics2014" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.FebView"
+            android:label="@string/month_feb" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.MarchView"
+            android:label="@string/month_mar" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.AprilView"
+            android:label="@string/month_apr" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.MayView"
+            android:label="@string/month_may" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.MyAcademics"
+            android:label="@string/academics" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.MyFinances"
+            android:label="@string/finances" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.Calenders"
+            android:label="@string/calender" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.SemesterListActivity"
+            android:label="@string/title_semester_list" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.ClassListFragment"
+            android:label="@string/title_classfragment" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.SemesterDetailActivity"
+            android:label="@string/title_semester_detail"
+            android:parentActivityName="com.example.myualbany_app.SemesterListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myualbany_app.SemesterListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.SemesterSchedListActivity"
+            android:label="@string/title_semestersched_list" >
+        </activity>
+        <activity
+            android:name="com.example.myualbany_app.SemesterSchedDetailActivity"
+            android:label="@string/title_semestersched_detail"
+            android:parentActivityName="com.example.myualbany_app.SemesterSchedListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myualbany_app.SemesterSchedListActivity" />
+        </activity>
+    </application>
+
+</manifest>
